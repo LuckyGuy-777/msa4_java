@@ -1,5 +1,7 @@
 package com.msa4java.edu;
 
+import com.msa4java.edu.oop.AccessModifier;
+
 public class HiJava {
 
     public static void main(String[] args){
@@ -11,5 +13,7 @@ public class HiJava {
         int num = 54;
 
         System.out.printf("안녕 %s : %d", str, num);
+
+        AccessModifier accessModifier = new AccessModifier();
     }
 }
