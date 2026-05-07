@@ -1,5 +1,5 @@
 // 이 패키지는, 클래스의 주소 라고 여긴다.
-package com.msa4java.edu.oop;
+package com.msa4java.edu.oop.basic;
 
 // 클래스 이름은, 파스칼 기법으로 작성해야한다
 // 그리고, 파일이름과 클래스명이 동일해야한다
@@ -18,12 +18,13 @@ public class Whale {
 
     //메소드
     public void  swimming(){
-        // static 변수에 접근이 안됨  this.age
+        // static 변수에 접근이 안됨
         System.out.println("고래가 헤엄칩니다.");
     }
 
     public static void breath() {
 //        static 메소드에서는, this 가 쓰일수 없음.
+
         System.out.println("고래가 호흡을 합니다.");
     }
 
