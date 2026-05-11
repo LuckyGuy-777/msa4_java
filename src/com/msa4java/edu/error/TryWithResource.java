@@ -8,11 +8,8 @@ public class TryWithResource {
 
 
         // TryWithResource 는,
-        // try 의,소괄호 에는, 리소스를 여는행위.
-        // 보통 데이터베이스 파일을 가져올때, 네트워크 통신을 할때,
+        // try 의,소괄호 에는, 리소스를 여는 네트워크 통신을 할때,
         // 문서파일을 가져올때 사용함
-
-
         try (FileWriter file = new FileWriter("text.txt")) {
 
             // text.txt 파일이 없으면, file.write 부분에서, 파일이 생성되고,
@@ -21,8 +18,8 @@ public class TryWithResource {
             file.write("안녕");
         } catch (IOException e) {
             e.printStackTrace();
-        }
-
+        }//행위.
+        // 보통 데이터베이스 파일을 가져올때,
 
         // 선언을, try/catch 밖에서 선언하면, finally 에서도 접근가능
 //        FileWriter file = null;
